@@ -1,0 +1,429 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+
+<!-- Cabecera -->
+<!--
+
+<div class="banner">
+		<div class="capa"></div>
+		<div class="info">
+			<h1>Bienvenidos a Vidrieria "PEPE" </h1>
+			<p>Tenemos una amplia experiencia en trabajos de instalación de vidrios en todos los sistemas , como prioridad es la satisfacción de nuestros clientes, por ello brindamos nuestros servicios especializados y elaboramos los productos con materiales de reconocida calidad.</p>
+ 
+       <a class="btn btn-primary btn-xl" href="{% url 'services' %}">Leer Más</a>
+		</div>
+	</div>
+
+
+
+ <div class="container marketing">
+<br>
+<br>
+   <!-- <h2 style="color:#f8f9fa";>NUSTROS PROYECTOS text</h2> 
+<br>
+<br>
+    <!-- START THE FEATURETTES  
+  
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+ 
+       <h2 style="color:#f8f9fa"   class="featurette-heading fw-normal lh-1">MISIÓN <h1 style="color:#f8f9fa"> </h1> </h2>
+        <p  style="color:#f8f9fa" class="lead">
+Nos exigimos para satisfacer a nuestros clientes con calidad y compromiso en los servicios de instalaciones y proyectos que nos confían. Contribuimos con la creatividad, la iniciativa y superación de nuestros trabajadores bajo los valores y principios .</p>  
+      </div>
+      <div class="col-md-5">
+      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/ventana.jpg' %}" alt="">
+        
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        
+       <h2 style="color:#f8f9fa"   class="featurette-heading fw-normal lh-1">VISIÓN <h1 style="color:#f8f9fa"> </h1> </h2>
+        <p  style="color:#f8f9fa" class="lead">Nuestra visión es hacer de Vidrieria PEPE una empresa líder donde buscamos la satisfacción de nuestros clientes,dedicamos nuestros servicios y productos a contribuir una mejor calidad de acabado para nuestra sociedad.</p>  
+      </div>
+      <div class="col-md-5 order-md-1">
+       <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/pol.jpg' %}" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+         
+        <h2 style="color:#f8f9fa"   class="featurette-heading fw-normal lh-1">VALORES <h1 style="color:#f8f9fa"> </h1> </h2>
+        <p  style="color:#f8f9fa" class="lead">Responsabilidad , Cumplimiento de actividades , Orientación a la persona,trabajo en equipo, puntualidad</p>  
+      </div>
+      <div class="col-md-5">
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/mampara5.jpg' %}" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES  
+
+  </div><!-- /.container 
+
+
+ 
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+ <section class="page-section about-heading">
+  <div class="container">
+   <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fvidriospepe%2Fvideos%2F271020994442418%2F&show_text=false&width=560&t=0" width="100%" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    <div class="about-heading-content">
+      <div class="row">
+        <div class="col-xl-9 col-lg-10 mx-auto">
+          <div class="bg-faded rounded p-5">
+            <h2 class="section-heading mb-4">
+               <!-- <span class="section-heading-upper">Empresa altamente calificada</span>
+              <span class="section-heading-lower">PROYECTOS</span>
+            </h2>
+            <p>A través de un equipo de profesionales, técnicas especializadas y procesos a la vanguardia,
+logramos que las personas y empresas satisfagan sus necesidades con satisfacción de forma perdurable. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section about-heading">
+  <div class="container">
+    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fvidriospepe%2Fvideos%2F472558284178265%2F&show_text=false&width=261&t=0" width="100%" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    <div class="about-heading-content">
+      <div class="row">
+        <div class="col-xl-9 col-lg-10 mx-auto">
+          <div class="bg-faded rounded p-5">
+            <h2 class="section-heading mb-4">
+               <!-- <span class="section-heading-upper">Empresa altamente calificada</span>
+              <span class="section-heading-lower">SERVICIOS DE VIDRIERÍA</span>
+            </h2>
+            <p>Brindamos instalaciones de trabajos con vidrio a través de la asesoría para diversos tipos de proyectos.
+Somos sinónimo de compromiso y experiencia. De esta manera, hemos logrado impactar en la vida de las personas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="page-section clearfix">
+  <div class="container">
+    <div class="intro">
+      <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'core/img/espejo.jpg' %}" alt="">
+      <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+        <h2 class="section-heading mb-4">
+          <span class="section-heading-upper">Lo hacemos facil</span>
+          <span class="section-heading-lower">Estamos para apoyarte</span>
+        </h2>
+        <p class="mb-3">Trabajamos con las mejores marcas.Tenemos para ti accesorios innovadores de calidad superior para decorar tus espacios de forma única.
+        </p>
+        <div class="intro-button mx-auto">
+          <a class="btn btn-primary btn-xl" href="{% url 'store' %}">Visítanos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Mensaje 
+<section class="page-section cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="cta-inner text-center rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">Compromiso total</span>
+            <span class="section-heading-lower">Garantizado</span>
+          </h2>
+          <p class="mb-0">Con nuestra experiencia en el mercado garantizamos un buen acabado en el servicio. Somos una empresa que tiene como política y estrategia principal la calidad y garantía en las diversas áreas de negocio</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="page-section about-heading">
+  <div class="container">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15605.351773283997!2d-77.0714145!3d-12.0890015!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9a70d046c3d%3A0xfdb54d65c74a86c4!2zVklEUklFUsONQSBQRVDDiQ!5e0!3m2!1ses-419!2spe!4v1678133256898!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="about-heading-content">
+      
+    </div>
+  </div>
+</section>
+<br>
+<br>-->
+   <style>
+    .elementor-element .elementor-widget-container {
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
+   }
+
+   .elementor-1485 .elementor-element.elementor-element-98382d2 .elementor-heading-title {
+    color: #0F58A3;
+    font-size: 35px;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+   .shadowbox {
+  width: 15em;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+}
+.elementor-heading-title {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+.circular--square {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+rs-slides, rs-slide, rs-slide:before {
+    position: absolute;
+    text-indent: 0em;
+    top: 0px;
+    left: 0px;
+}
+   </style>
+
+ 
+   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+     <br> <br> <br>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+ 
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       
+        <img class="btn rs-slides py-2 dropdown-toggle d-flex align-items-center" src="{% static 'core/img/f2.jpg' %}" alt="mampara" width="100%" height="100%">
+           
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <!--<h1>Example headline.</h1>
+            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+             <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item active">
+       
+        <img class="btn rs-slides py-2 dropdown-toggle d-flex align-items-center" src="{% static 'core/img/f3.jpg' %}" alt="mampara" width="100%" height="100%">
+           
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <!--<h1>Example headline.</h1>
+            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+             <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> -->
+          </div>
+        </div>
+      </div>
+
+<div class="carousel-item active">
+       
+        <img class="btn rs-slides py-2 dropdown-toggle d-flex align-items-center" src="{% static 'core/img/f2.jpg' %}" alt="mampara" width="100%" height="100%">
+           
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <!--<h1>Example headline.</h1>
+            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+             <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <!-- <svg class="bd-placeholder-img"   width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>-->
+        <img class="btn rs-slides  py-2 dropdown-toggle d-flex align-items-center" src="{% static 'core/img/bb.jpeg' %}" alt="mampara2" width="100%" height="100%">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <!--<h1>One more for good measure.</h1>-->
+            <!--<p>Disponemos de nuestro Call Center para atender todas sus consultas</p>-->
+            <p><a class="btn btn-lg btn-primary" href="{% url 'contact' %}">Contáctenos</a></p>
+            <!-- <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/mampara5.jpg' %}" alt="">-->
+         </div>
+       </div>
+      </div>
+
+       <!-- <div class="carousel-item">
+        <!-- <svg class="bd-placeholder-img"   width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> 
+        <img class="btn rs-slides  py-2 dropdown-toggle d-flex align-items-center" src="{% static 'core/img/f3.jpg' %}" alt="mampara2" width="100%" height="100%">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <!--<h1>One more for good measure.</h1> 
+            <p>Disponemos de nuestro Call Center para atender todas sus consultas</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Contáctenos</a></p>
+            <!-- <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/mampara5.jpg' %}" alt=""> 
+         </div>
+       </div>
+      </div>-->
+
+    </div>
+    <div  class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </div >
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+   <br>
+
+
+
+
+   <!--<div class="shadowbox">
+  <p>Here's a very interesting note displayed in a lovely shadowed box.</p>
+</div>-->
+
+<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default align-items-center" style ="color:#FF0000 ;font-size: 35px;text-align: center">Unidades de negocios</h2>		</div>
+
+   <br>
+   <br>
+
+
+
+
+
+
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+       <!-- <img class="btn rs-slides py-2 dropdown-toggle d-flex align-items-center" src="{% static 'core/img/f2.jpg' %}" alt="mampara" width="100%" height="100%">-->
+
+        <!-- <svg class="bd-placeholder-img rounded-circle"  width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect  width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> />
+        </svg>-->
+        <img class="circular--square" src="{% static 'core/img/ban-3.jpg' %}" width="140" height="140"/>
+         
+        <h2 class="fw-normal">Informatica</h2>
+        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="circular--square" src="{% static 'core/img/bg.jpg' %}" width="140" height="140"/>
+        <h2 class="fw-normal">Servicios generales</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="circular--square" src="{% static 'core/img/f2.jpg' %}" width="140" height="140"/>
+        <h2 class="fw-normal">Constructora</h2>
+        <p>And lastly this, the third column of representative placeholder content.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">SERVICIOS DE VIDRIERÍA
+              EN <span class="text-body-secondary">LIMA Y PERÚ </span></h2>
+        <p class="lead">A través de un equipo de profesionales, técnicas especializadas y procesos a la vanguardia,
+         logramos que las personas y empresas satisfagan sus necesidades con satisfacción de forma perdurable. 
+Actualmente somos líderes en la comercialización de Vidrios, Aluminios y Plásticos utilizados en el sector de la construcción e industria. Además contamos con un equipo de profesionales altamente capaces de superar las expectativas de los clientes frente a las nuevas tendencias del mercado, con los objetivos y políticas de nuestra empresa, con el fin de superar las expectativas de nuestros clientes.
+           
+        Estamos listos para brindarte una atención personalizada, resolutiva y experta acorde a tus requerimientos en vidrios. </p>
+      </div>
+      <div class="col-md-5">
+      <br><br><br><br><br>
+      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/mampara5.jpg' %}" width="100%" height="100%">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">¿Que le  <span class="text-body-secondary">Ofrecemos?</span></h2>
+        <p class="lead">PROYECTOS IActualmente somos líderes en la comercialización de Vidrios, Aluminios y Plásticos utilizados en el sector de la construcción e industria. Además contamos con un equipo de profesionales altamente capaces de superar las expectativas de los clientes frente a las nuevas tendencias del mercado, con los objetivos y políticas de nuestra empresa, con el fin de superar las expectativas de nuestros clientes.
+           Los esperamos en cualquiera de nuestras sedes!!Actualmente somos líderes en la comercialización de Vidrios, Aluminios y Plásticos utilizados en el sector de la construcción e industria. Además contamos con un equipo de profesionales altamente capaces de superar las expectativas de los clientes frente a las nuevas tendencias del mercado, con los objetivos y políticas de nuestra empresa, con el fin de superar las expectativas de nuestros clientes.
+          Desde 1921, somos sinónimo de experiencia, compromiso y transformación. De esta manera, hemos logrado impactar en la vida de las personas durante nuestras décadas de trayectoria</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+      <br> <br> <br> 
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/mampara5.jpg' %}" width="100%" height="100%">
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
+        <p class="lead">Actualmente somos líderes en la comercialización de Vidrios, Aluminios y Plásticos utilizados en el sector de la construcción e industria. Además contamos con un equipo de profesionales altamente capaces de superar las expectativas de los clientes frente a las nuevas tendencias del mercado, con los objetivos y políticas de nuestra empresa, con el fin de superar las expectativas de nuestros clientes.
+           Los esperamos en cualquiera de nuestras sedes!!Actualmente somos líderes en la comercialización de Vidrios, Aluminios y Plásticos utilizados en el sector de la construcción e industria. Además contamos con un equipo de profesionales altamente capaces de superar las expectativas de los clientes frente a las nuevas tendencias del mercado, con los objetivos y políticas de nuestra empresa, con el fin de superar las expectativas de nuestros clientes.
+           Los esperamos en cualquiera de nuestras sedes!!</p>
+      </div>
+      <div class="col-md-5">
+      <br>
+      <br>
+      <br><br><br>
+      <br><br><br>
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/mampara5.jpg' %}" width="100%" height="100%">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+
+ 
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+ 
+
+  <!-- FOOTER  
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>-->
+{% endblock %}
